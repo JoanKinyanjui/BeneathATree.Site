@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <form action="{% url 'sentmessage' %}" method="post" >
+        {% csrf_token %}
+        <input type='text' placeholder="text" name='message'/>
+        <input  type='submit' value="send" />
+       </form>
+      
+    </body>
+</html>
